@@ -966,6 +966,7 @@ function gui = createInterface( ~ )
         else
             redraw_WOA_sageO2Argo(dirs,gui,DATA,inputs)   
         end
+        save(['sage_data\', inputs.floatID, '_sagedata.mat'], '-struct', 'DATA');
     end 
 
 %-------------------------------------------------------------------------%
